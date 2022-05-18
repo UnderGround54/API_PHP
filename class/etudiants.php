@@ -54,5 +54,11 @@ class Etudiant{
         return $statement->execute($form_data);
     }
 
+    public function delete($id){
+        $querry = "DELETE FROM $this->table WHERE id_etudiant=$id";
+        $statement = $this->connect->prepare($querry);
+        return $statement->execute();
+    }
+
 }
 ?>

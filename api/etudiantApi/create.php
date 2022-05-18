@@ -11,12 +11,12 @@
     $insertEt = new Etudiant($db);
     // $data = json_decode(file_get_contents("php://input"));
 
-    if(isset($_POST["id_etudiant"]) || isset($_POST["nom"]) || isset($_POST["prenom"]) || isset($_POST["age"])){
-        if($_POST["id_etudiant"==""] || $_POST["nom"==""] || $_POST["prenom"==""] || $_POST["age"==""]){
-            echo "il y a de(s) champ(s) vide";
-            return;
-        }
-    }
+    // if(isset($_POST["id_etudiant"]) || isset($_POST["nom"]) || isset($_POST["prenom"]) || isset($_POST["age"])){
+    //     if($_POST["id_etudiant"==""] || $_POST["nom"==""] || $_POST["prenom"==""] || $_POST["age"==""]){
+    //         echo "il y a de(s) champ(s) vide";
+    //         return;
+    //     }
+    // }
 
     $data = array(
         'id_etudiant'=> htmlspecialchars(strip_tags($_POST["id_etudiant"])),
